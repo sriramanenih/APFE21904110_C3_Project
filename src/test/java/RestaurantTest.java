@@ -32,7 +32,7 @@ class RestaurantTest {
 
     @Test
     public void is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time(){
-
+    //1.Is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time()
 
         //Act
         Restaurant spyRestaurant = Mockito.spy(restaurant);
@@ -51,6 +51,7 @@ class RestaurantTest {
     @Test
     public void is_restaurant_open_should_return_false_if_time_is_outside_opening_and_closing_time(){
 
+      //2.Is_restaurant_open_should_return_false_if_time_is_outside_opening_and_closing_time()
         //ACT
         Restaurant spyRestaurant = Mockito.spy(restaurant);
 
