@@ -6,13 +6,14 @@ public class RestaurantService {
     private static List<Restaurant> restaurants = new ArrayList<>();
 
     public Restaurant findRestaurantByName(String restaurantName) throws restaurantNotFoundException {
-        
+     //1. searching_for_existing_restaurant_should_return_expected_restaurant_object()
      for(Restaurant restaurant : restaurants){
 		if(restaurant.getName().equals(restaurantName)){
 			return restaurant;
 		}
 		
 		}
+     //2. searching_for_non_existing_restaurant_should_throw_exception()
         throw new restaurantNotFoundException(restaurantName);
 
 	}
